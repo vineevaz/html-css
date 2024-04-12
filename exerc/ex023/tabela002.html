@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Tabelas </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: rgb(255, 255, 255); 
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(68, 68, 68);
+        }
+        td.num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(odd){ /* 2n-1*/
+            background-color: coral;
+        }
+        tbody tr:nth-child(even){ /* 2n */
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        Anatomia de Tabelas Grandes 
+        CAPTION
+        THEAD
+            tr,td,th
+        TBODY
+            tr,td,th
+        TFOOT
+            tr,td,th
+    -->
+    <Table>
+        <thead>
+            <caption>População das Unidades Feredativas</caption>
+            <tr>
+                <thead>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                    
+                </thead>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 056 495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 775 805</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 974 687</td>
+            </tr>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">0000</td>
+        </tfoot>
+    </Table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at dolorem, sunt inventore sint facilis sapiente ex, cum ducimus illum ullam. Nesciunt molestias expedita incidunt ab, minus aperiam cupiditate. Amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt nostrum unde, sit, quo harum laboriosam atque omnis eum doloribus tempora vero quas natus repellat vel autem dolor voluptatibus nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae alias eaque ipsam quisquam vero necessitatibus dolore sint repellendus animi veniam neque illo amet quam inventore, nihil officia error accusamus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate modi debitis error consequuntur iure molestiae illum asperiores dicta beatae eum voluptatem nihil voluptate facilis non laudantium ipsum obcaecati, excepturi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora molestias esse, quidem porro neque inventore voluptates obcaecati possimus dignissimos dolorum eveniet exercitationem tempore similique, quisquam quasi sunt, nihil ipsum fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit error perspiciatis impedit harum illum? Molestias vitae, sapiente, culpa magni officia soluta deserunt omnis odit expedita totam, laborum neque mollitia dolorem!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at dolorem, sunt inventore sint facilis sapiente ex, cum ducimus illum ullam. Nesciunt molestias expedita incidunt ab, minus aperiam cupiditate. Amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt nostrum unde, sit, quo harum laboriosam atque omnis eum doloribus tempora vero quas natus repellat vel autem dolor voluptatibus nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae alias eaque ipsam quisquam vero necessitatibus dolore sint repellendus animi veniam neque illo amet quam inventore, nihil officia error accusamus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate modi debitis error consequuntur iure molestiae illum asperiores dicta beatae eum voluptatem nihil voluptate facilis non laudantium ipsum obcaecati, excepturi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora molestias esse, quidem porro neque inventore voluptates obcaecati possimus dignissimos dolorum eveniet exercitationem tempore similique, quisquam quasi sunt, nihil ipsum fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit error perspiciatis impedit harum illum? Molestias vitae, sapiente, culpa magni officia soluta deserunt omnis odit expedita totam, laborum neque mollitia dolorem!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at dolorem, sunt inventore sint facilis sapiente ex, cum ducimus illum ullam. Nesciunt molestias expedita incidunt ab, minus aperiam cupiditate. Amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt nostrum unde, sit, quo harum laboriosam atque omnis eum doloribus tempora vero quas natus repellat vel autem dolor voluptatibus nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae alias eaque ipsam quisquam vero necessitatibus dolore sint repellendus animi veniam neque illo amet quam inventore, nihil officia error accusamus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate modi debitis error consequuntur iure molestiae illum asperiores dicta beatae eum voluptatem nihil voluptate facilis non laudantium ipsum obcaecati, excepturi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora molestias esse, quidem porro neque inventore voluptates obcaecati possimus dignissimos dolorum eveniet exercitationem tempore similique, quisquam quasi sunt, nihil ipsum fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit error perspiciatis impedit harum illum? Molestias vitae, sapiente, culpa magni officia soluta deserunt omnis odit expedita totam, laborum neque mollitia dolorem!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at dolorem, sunt inventore sint facilis sapiente ex, cum ducimus illum ullam. Nesciunt molestias expedita incidunt ab, minus aperiam cupiditate. Amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt nostrum unde, sit, quo harum laboriosam atque omnis eum doloribus tempora vero quas natus repellat vel autem dolor voluptatibus nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae alias eaque ipsam quisquam vero necessitatibus dolore sint repellendus animi veniam neque illo amet quam inventore, nihil officia error accusamus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate modi debitis error consequuntur iure molestiae illum asperiores dicta beatae eum voluptatem nihil voluptate facilis non laudantium ipsum obcaecati, excepturi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora molestias esse, quidem porro neque inventore voluptates obcaecati possimus dignissimos dolorum eveniet exercitationem tempore similique, quisquam quasi sunt, nihil ipsum fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit error perspiciatis impedit harum illum? Molestias vitae, sapiente, culpa magni officia soluta deserunt omnis odit expedita totam, laborum neque mollitia dolorem!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at dolorem, sunt inventore sint facilis sapiente ex, cum ducimus illum ullam. Nesciunt molestias expedita incidunt ab, minus aperiam cupiditate. Amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt nostrum unde, sit, quo harum laboriosam atque omnis eum doloribus tempora vero quas natus repellat vel autem dolor voluptatibus nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae alias eaque ipsam quisquam vero necessitatibus dolore sint repellendus animi veniam neque illo amet quam inventore, nihil officia error accusamus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate modi debitis error consequuntur iure molestiae illum asperiores dicta beatae eum voluptatem nihil voluptate facilis non laudantium ipsum obcaecati, excepturi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora molestias esse, quidem porro neque inventore voluptates obcaecati possimus dignissimos dolorum eveniet exercitationem tempore similique, quisquam quasi sunt, nihil ipsum fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit error perspiciatis impedit harum illum? Molestias vitae, sapiente, culpa magni officia soluta deserunt omnis odit expedita totam, laborum neque mollitia dolorem!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at dolorem, sunt inventore sint facilis sapiente ex, cum ducimus illum ullam. Nesciunt molestias expedita incidunt ab, minus aperiam cupiditate. Amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt nostrum unde, sit, quo harum laboriosam atque omnis eum doloribus tempora vero quas natus repellat vel autem dolor voluptatibus nisi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae alias eaque ipsam quisquam vero necessitatibus dolore sint repellendus animi veniam neque illo amet quam inventore, nihil officia error accusamus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate modi debitis error consequuntur iure molestiae illum asperiores dicta beatae eum voluptatem nihil voluptate facilis non laudantium ipsum obcaecati, excepturi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora molestias esse, quidem porro neque inventore voluptates obcaecati possimus dignissimos dolorum eveniet exercitationem tempore similique, quisquam quasi sunt, nihil ipsum fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit error perspiciatis impedit harum illum? Molestias vitae, sapiente, culpa magni officia soluta deserunt omnis odit expedita totam, laborum neque mollitia dolorem!
+    </p>
+</body>
+</html>

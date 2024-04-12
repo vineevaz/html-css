@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(102, 102, 102);
+
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 5px;
+            margin: 10px;
+            border-radius: 10px;
+            
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px; 
+            border-radius: 10px;
+        }
+
+    article {
+        background-color: rgb(221, 221, 221);
+        border-radius: 5px;
+        padding: 5px;
+    
+    }
+    article > aside{
+        background-color: rgb(167, 167, 167);
+       
+    }
+    footer{
+        background-color: black;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+        
+
+    }
+    nav{
+        background-color: rgb(201, 199, 199);
+        padding: 3px;
+        box-shadow: 1px 1px 8px 0px black;
+
+
+    }
+    nav > a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    footer > p{
+        margin: 0px;
+    }
+    
+   
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+    
+        <section id="noticias">
+            <article>
+                
+                    <h2>Noticia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta deleniti nobis velit ducimus repellat iure veniam corrupti, nostrum magnam ipsam! Necessitatibus, libero ducimus. Natus nisi at praesentium corporis dolores architecto.</p>
+                <aside>Escrito por vinee</aside>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido pelo curso em video</p>
+
+    </footer>
+    <div id="bola">
+      
+    </div>
+</body>
+</html>
