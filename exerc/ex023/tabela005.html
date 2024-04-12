@@ -11,6 +11,8 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            height: 200px;
+            
         }
         caption{
             font-size: 1.3em;
@@ -19,11 +21,29 @@
         }
         th, td{
             border: 1px solid black;
+            padding: 8px;
+            
+        }
+        col.cnome{
+            background-color: chartreuse;
+        }
+        col.csexo{
+            background-color: coral;
+        }
+        col.cgrupo{
+            background-color: darkturquoise;
         }
     </style>
 </head>
 <body>
+    <h1>Teste de Tabelas</h1>
     <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cgrupo" span="2">
+        
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">nome</th>
@@ -36,6 +56,30 @@
             <td>F</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Levi Askov</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Agiota</td>
+        </tr>
+        <tr>
+            <td>Ana Claudia</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Rifeira</td>
+        </tr>
+        <tr>
+            <td>Vei do Samba</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Musico</td>
+        </tr>
+        <tr>
+            <td>Jotape</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Repositor</td>
         </tr>
     </table>
 </body>
