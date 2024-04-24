@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="nome" id="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+            <form action="cadastro.php" method="get" autocomplete="on"></form>
+        <p><label for="email" id="iemal">Email </label>
+            <input type="email" name="email" id="iemal" autocomplete="email">
+        </p>
+        <p>
+            <label for="tell" id="itell"> Telefone</label>
+            <input type="tel" name="tell" id="itell" autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}$" placeholder="(xx) xxxx-xxxx">
+        </p>
+        <!--Estudar + sobre espressão regular RegEX-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </fieldset>
+</body>
+</html>
