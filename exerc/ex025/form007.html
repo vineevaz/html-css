@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest"></label>
+            <select name="est" id="iest">
+                <option value="" selected>--Escolha--</option>
+                <optgroup label="Teste ">
+
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="BA" selected>Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof"> Trabalhos </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="LD">Ladrão</option>
+                <option value="ND">Nerd</option>
+                <option value="GP">Garotas do Job</option>
+                <option value="D7">Os menino do 7</option>
+
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem aqui..."></textarea>
+            
+            <!--Todo formulario que usa GET tem limite de 3K bits para enviar, então se usa POST-->
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

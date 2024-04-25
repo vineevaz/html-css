@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <p>
+            <label for="icor"></label>
+            <input type="color" name="cor" id="icor" value="blue">
+        </p>
+        <p>
+            <label for="inivel">Nivel de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel">
+        </p>
+        <p>
+            <label for="ifoto">Foto de Perfil</label>
+            <input type="file" name="Foto" id="ifoto">
+            <!--Quando utilizar o metodo de envio não se utiliza o method get, se usa o post "por causa da limitação de 3k bits"-->
+            
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
